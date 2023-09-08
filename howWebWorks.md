@@ -31,9 +31,18 @@ In your own terms, define the following terms:
    requesting additional information status (204 No Content)</b></span>
 ## ****Part Two: Practice Tools****
 
-1. Using ***curl***, make a ***GET*** request to the *icanhazdadjoke.com* API to find all jokes involving the word “pirate”
-<span style ="color: yellow;">curl -H "Accept: application/json" "https://icanhazdadjoke.com/search?term=pirate"   
-{"current_page":1,"limit":20,"next_page":1,"previous_page":1,"results":[{"id":"2gii3LeN7Ed","joke":"Why couldn't the kid see the pirate movie? Because it was rated arrr!"},{"id":"QuscibaMClb","joke":"What does a pirate pay for his corn? A buccaneer!"},{"id":"SvzIBAQS0Dd","joke":"What did the pirate say on his 80th birthday? Aye Matey!"},{"id":"SnOf2gqjiqc","joke":"Why are pirates called pirates? Because they arrr!"},{"id":"exXSCtkOKe","joke":"Why do pirates not know the alphabet? They always get stuck at \"C\"."}],"search_term":"pirate","status":200,"total_jokes":5,"total_pages":1}</b></span>
+1. Using ***curl***, make a ***GET*** request to the *icanhazdadjoke.com* API to find all jokes involving the word “pirate” \
+<span style ="color: yellow;">  
+curl -H "Accept: application\/json" "https:\/\/icanhazdadjoke.com/search?term=pirate"   \
+{"current_page":1,"limit":20,"next_page":1,"previous_page":1,"results": \
+[\
+    {"id":"2gii3LeN7Ed","joke":"Why couldn't the kid see the pirate movie? Because it was rated arrr!"}, \
+    {"id":"QuscibaMClb","joke":"What does a pirate pay for his corn? A buccaneer!"}, \
+    {"id":"SvzIBAQS0Dd","joke":"What did the pirate say on his 80th birthday? Aye Matey!"}, \
+    {"id":"SnOf2gqjiqc","joke":"Why are pirates called pirates? Because they arrr!"}, \
+    {"id":"exXSCtkOKe","joke":"Why do pirates not know the alphabet? They always get stuck at \"C\"."} \
+] \
+,"search_term":"pirate","status":200,"total_jokes":5,"total_pages":1} </b></span>
 2. Use ***dig*** to find what the IP address is for *icanhazdadjoke.com* (see underlined below for v4 v6 IP'scl)  
 <span style ="color: yellow;">$ dig icanhazdadjoke.com \
 \; \<\<\>\> DiG 9.16.1-Ubuntu <<>> icanhazdadjoke.com \
